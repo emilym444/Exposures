@@ -2,37 +2,116 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #92D293;
+    font-family: Baskerville,Times,'Times New Roman',serif;
+
+}
+header{
+  text-align: center;
+  font-size: 100px;
+  color: #F4F0EC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.newNote{
+    width: 50%;
+    height:425px;
+    border-radius: 5px;
+    background-color: #F4F0EC;
+    padding: 20px;
+    float:right;
+    align-content:center;
+    margin-top: 50px;
+    margin-right: 50px;
+
   }
+
+.checkIn{
+ font-weight:bold;
+  font-family:Baskerville,Times,'Times New Roman',serif;
+   margin:0px 0px 15px 0px;
+ text-align: center;
+ font-size: 50px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+  font-family:Baskerville,Times,'Times New Roman',serif;
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #F4F0EC;
+  font-size: 16px;
+  resize: none;
+  border-radius: 8px;
+}
+
+/* input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} */
+
+button.submit{
+  width: 100%;
+  height: 40px;
+  background-color: #92D293;
+  color:#F4F0EC;
+  font-size: 20px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+button:hover.submit{
+  background-color:#f8f8f8;
+  color: #92D293;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+.container {
+  margin: 90px auto 90px;
+  padding: 16px;
+  background-color: #F4F0EC;
+  width: 50%;
+}
+
+.loginTitle{
+  font-size: 45px;
+  text-align: center;
+}
+span.passWord {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  span.passWord {
+     display: block;
+     float: none;
   }
 }
