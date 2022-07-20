@@ -2,116 +2,230 @@
   text-align: center;
 }
 
-body{
-    background-color: #92D293;
-    font-family: Baskerville,Times,'Times New Roman',serif;
-
-}
-header{
-  text-align: center;
-  font-size: 100px;
-  color: #F4F0EC;
+a:hover {
+  color: #92D293;
 }
 
-.newNote{
-    width: 50%;
-    height:425px;
-    border-radius: 5px;
-    background-color: #F4F0EC;
-    padding: 20px;
-    float:right;
-    align-content:center;
-    margin-top: 50px;
-    margin-right: 50px;
-
-  }
-
-.checkIn{
- font-weight:bold;
-  font-family:Baskerville,Times,'Times New Roman',serif;
-   margin:0px 0px 15px 0px;
- text-align: center;
- font-size: 50px
+body {
+  background-image: url("./E.png");
+  background-size: cover;
+  background-color: #F4F0EC;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
 }
 
 textarea {
-  font-family:Baskerville,Times,'Times New Roman',serif;
+  font-family: Baskerville, Times, 'Times New Roman', serif;
   width: 100%;
   height: 100px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #CECEC3;
   background-color: #F4F0EC;
-  font-size: 16px;
+  font-size: 18px;
   resize: none;
   border-radius: 8px;
 }
 
-/* input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-} */
-
-button.submit{
-  width: 100%;
-  height: 40px;
-  background-color: #92D293;
-  color:#F4F0EC;
-  font-size: 20px;
-  border-radius: 8px;
-  transition-duration: 0.4s;
-}
-
-button:hover.submit{
-  background-color:#f8f8f8;
-  color: #92D293;
-}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+label {
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #114817;
 }
 
 button {
-  background-color: #04AA6D;
-  color: white;
+  border: 2px solid #CECEC3;
+  background-color: #F4F0EC;
+  color: #114817;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 8px;
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: #114817;
+  color: #F4F0EC;
 }
-
 
 .container {
   margin: 90px auto 90px;
   padding: 16px;
   background-color: #F4F0EC;
   width: 50%;
+  border-radius: 8px;
+  border: 2px solid #CECEC3;
 }
 
-.loginTitle{
+/* register/login */
+input[type=Email], input[type=password], input[type=Text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #CECEC3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #F4F0EC;
+}
+
+/* Home */
+.title {
+  color: #114817;
   font-size: 45px;
   text-align: center;
 }
-span.passWord {
-  float: right;
-  padding-top: 16px;
+
+.introP {
+  font-size: 50px;
+  text-align: center;
+  color: #114817;
 }
-@media screen and (max-width: 300px) {
-  span.passWord {
-     display: block;
-     float: none;
-  }
+
+.heading {
+  font-size: 150px;
+  font-style: italic;
+  text-align: center;
+  color: #114817;
+}
+
+/* journal page */
+.journalBack {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F4F0EC;
+  background-size: cover;
+}
+
+.sideBar {
+  width: 15%;
+  height: auto;
+  background: #F4F0EC;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+.newNote {
+  vertical-align: top;
+  width: 50%;
+  height: flex;
+  border: 2px solid #CECEC3;
+  border-radius: 5px;
+  background-color: #F4F0EC;
+  color: #114817;
+  padding: 20px;
+  display: inline-block;
+  float: right;
+  margin-right: 350px;
+  margin-top: 50px;
+  position: sticky;
+  font-size: 18px;
+}
+
+.note {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #F4F0EC;
+  padding: 20px;
+  align-content: center;
+  margin: 15px;
+  font-size: 18px;
+  border: 2px solid #CECEC3;
+}
+
+.checkIn {
+  font-weight: bold;
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+.noteText {
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #CECEC3;
+  background-color: #F4F0EC;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.datePick {
+  font-family: Baskerville, Times, 'Times New Roman', serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #CECEC3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #F4F0EC;
+  font-size: 18px;
+}
+
+.submit {
+  width: 100%;
+  background-color: #114817;
+  color: #F4F0EC;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+
+/* forgot page */
+.forgot {
+  font-size: 18px;
+}
+
+a.forgot:hover {
+  color: #114817;
+}
+
+/* ladder */
+ol li {
+  background: #F4F0EC;
+  color: #114817;
+  font-size: 32px;
+  font-weight: bolder;
+  padding: 5px;
+
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* logout  */
+.navLogout {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: #F4F0EC;
+  color: #CECEC3;
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+button.navLogout:hover {
+  color: #92D293;
+  background-color: #F4F0EC;
 }

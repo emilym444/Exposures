@@ -22,7 +22,7 @@ const Register = () => {
           password: registerPassword
         },
         withCredentials: true,
-        url: "/register"
+        url: "http://localhost:3000/register"
       }).then(res => {
         console.log(res);
         if (!res || res.status >= 400) {
