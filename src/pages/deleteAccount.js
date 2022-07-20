@@ -43,7 +43,7 @@ const Delete = () => {
       {
         goodbye ? <h1> Gooodbye, take care of yourself </h1> : null
       }
-      <div>
+      </div>
     </div>
   );
 };
