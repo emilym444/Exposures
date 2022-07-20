@@ -67,12 +67,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilym444/Exposures.git"
+    "url": "https://github.com/emilym444/client-ocd-exposures"
   },
   "author": "Emily Merin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/emilym444/Exposures/issues"
+    "url": "https://github.com/emilym444/client-ocd-exposures/issues"
   },
-  "homepage": "https://github.com/emilym444/Exposures#readme"
+  "homepage": "https://github.com/emilym444/client-ocd-exposures"
 }

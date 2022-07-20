@@ -19,7 +19,7 @@ const Delete = () => {
     console.log("1");
     axios({
       method: "get",
-      url: "http://localhost:3000/account",
+      url: "https://exposures-ocd.herokuapp.com/account",
       withCredentials: true
     }).then(res => console.log(res.data));
     setUser({isLoggedIn: false});
