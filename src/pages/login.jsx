@@ -21,7 +21,7 @@ const LoginUser = event => {
         email: loginEmail,
         password: loginPassword
       },
-      url: "http://localhost:3000/login",
+      url: "https://exposures-ocd.herokuapp.com/login",
       withCredentials: true,
       headers: {
         "Content-Type": "application/json"
