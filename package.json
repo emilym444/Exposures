@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "mongodb+srv://testing:12340987@cluster0.mhxjb.mongodb.net/ocd-exposures?retryWrites=true&w=majority",
+  "proxy": "http://localhost:5000/",
   "build": "react-scripts@>=2.0.0 build",
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
