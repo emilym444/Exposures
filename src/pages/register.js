@@ -25,7 +25,7 @@ const Register = () => {
                         'Content-type':'application/json',
                         'Access-Control-Allow-Origin': '*',
                     },
-        url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/register"
+        url: "https://exposures-ocd.herokuapp.com/register"
       }).then(res => {
         console.log(res);
         if (!res || res.status >= 400) {
