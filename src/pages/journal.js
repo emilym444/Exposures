@@ -51,8 +51,8 @@ const Journal = () => {
         entries: postCopy
       },
       headers:{
-                        'Content-type':'application/json',
-                        'Access-Control-Allow-Origin': '*',
+            'Content-type':'application/json',
+            'Access-Control-Allow-Origin': '*',
                     },
       withCredentials: true,
       url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal"
@@ -81,8 +81,7 @@ const Journal = () => {
                         'Content-type':'application/json',
                         'Access-Control-Allow-Origin': '*',
                     },
-      url: "https://cors-anywhere.herokuapp.com/
-      'https://exposures-ocd.herokuapp.com/journal/" + id
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal/" + id
     }).then(res => console.log(res.data));
     setSubmitPost(updatedPosts);
   }
