@@ -50,6 +50,10 @@ const Journal = () => {
       data: {
         entries: postCopy
       },
+      headers:{
+                        'Content-type':'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                    },
       withCredentials: true,
       url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal"
     }).then(res => setPost(res.data));
@@ -73,7 +77,12 @@ const Journal = () => {
       method: "get",
       data: id,
       withCredentials: true,
-      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal/" + id
+      headers:{
+                        'Content-type':'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                    },
+      url: "https://cors-anywhere.herokuapp.com/
+      'https://exposures-ocd.herokuapp.com/journal/" + id
     }).then(res => console.log(res.data));
     setSubmitPost(updatedPosts);
   }
