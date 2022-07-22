@@ -21,7 +21,7 @@ const LoginUser = event => {
         email: loginEmail,
         password: loginPassword
       },
-      url: "https://exposures-ocd.herokuapp.com/login",
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/login",
       withCredentials: true,
       headers: {
         "Content-Type": "application/json"

@@ -18,7 +18,7 @@ const Journal = () => {
     axios({
       method: "get",
       withCredentials: true,
-      url: "https://exposures-ocd.herokuapp.com/journal"
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal"
     }).then(function(response) {
       setSubmitPost(response.data);
       console.log(response.data);
@@ -51,7 +51,7 @@ const Journal = () => {
         entries: postCopy
       },
       withCredentials: true,
-      url: "https://exposures-ocd.herokuapp.com/journal"
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal"
     }).then(res => setPost(res.data));
     event.preventDefault();
     setPost({
@@ -73,7 +73,7 @@ const Journal = () => {
       method: "get",
       data: id,
       withCredentials: true,
-      url: "https://exposures-ocd.herokuapp.com/journal/" + id
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/journal/" + id
     }).then(res => console.log(res.data));
     setSubmitPost(updatedPosts);
   }

@@ -20,7 +20,7 @@ const Delete = () => {
     console.log("1");
     axios({
       method: "get",
-      url: "https://exposures-ocd.herokuapp.com/account",
+      url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/account",
       withCredentials: true
     }).then(res => console.log(res.data));
     setUser({isLoggedIn: false});

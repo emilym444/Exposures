@@ -22,7 +22,7 @@ const Register = () => {
           password: registerPassword
         },
         withCredentials: true,
-        url: "https://exposures-ocd.herokuapp.com/register"
+        url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/register"
       }).then(res => {
         console.log(res);
         if (!res || res.status >= 400) {
