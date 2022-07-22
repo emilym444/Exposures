@@ -25,7 +25,6 @@ const Register = () => {
                         'Content-type':'application/json',
                         'Access-Control-Allow-Origin': '*',
                     },
-        withCredentials: true,
         url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/register"
       }).then(res => {
         console.log(res);
