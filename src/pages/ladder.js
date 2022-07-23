@@ -7,8 +7,8 @@ const Ladder = () => {
   useEffect(tags => {
     axios({
       method: "get",
+      url: "http://localhost:5000/ladder",
       withCredentials: true,
-      url: "/ladder"
     }).then(function(response) {
       setTags(response.data);
       console.log(response.data);
@@ -38,8 +38,8 @@ const Ladder = () => {
       data: {
         tags: tagCopy
       },
+      url: "http://localhost:5000/ladder",
       withCredentials: true,
-      url: "/ladder"
     }).then(res => setTags(res.data));
     event.preventDefault();
     setNewTag({concern: ""});
@@ -53,8 +53,8 @@ const Ladder = () => {
     axios({
       method: "get",
       data: id,
+      url: "http://localhost:5000/ladder/" + id,
       withCredentials: true,
-      url: "ladder/" + id
     }).then(res => console.log(res.data));
     setTags(updatedTags);
   }

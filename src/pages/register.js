@@ -21,11 +21,8 @@ const Register = () => {
           email: registerEmail,
           password: registerPassword
         },
-        headers:{
-                        'Content-type':'application/json',
-                        'Access-Control-Allow-Origin': '*',
-                    },
-        url: "https://cors-anywhere.herokuapp.com/https://exposures-ocd.herokuapp.com/register"
+        url: "http://localhost:5000/register",
+        withCredentials: true
       }).then(res => {
         console.log(res);
         if (!res || res.status >= 400) {

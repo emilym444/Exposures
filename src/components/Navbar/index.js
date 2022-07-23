@@ -10,9 +10,12 @@ const Navbar = () => {
   const logOut = () => {
     axios({
       method: "delete",
-      url: "http://localhost:3000/index",
+      url: "http://localhost:5000/index",
       withCredentials: true
-    }).then(res => {
+    }).catch(err => {
+        console.log(err);
+        return;
+      }).then(res => {
       setUser({isLoggedIn: false});
       navigate("/");
     });
